@@ -305,3 +305,11 @@ D1数据库版本相比KV版本的主要优势：
 ---
 
 © 2025 KillerBest. 保留所有权利。
+
+
+
+## work_freekey
+
+1、添加模型白名单，调用api的时候如果是处于白名单中的模型不检测余额可以直接调用，使用时在D1数据库config表中添加字段whitelisted_models
+
+2、实现openai标准的模型列表获取接口 /models ，可以直接获取白名单模型列表，以下是Cherry Studio中的测试
